@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space invaders</title>
+</head>
+<style>
+  body{
+    background-color: rgb(75, 72, 113);
+  }
+  #canvas1{
+    border:5px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(background.png);
+    background-size: cover;
+  }
+
+  #beetlemorph, #player, #player_jets{
+    display: none;
+  }
+</style>
+<body>
+  <canvas id="canvas1"></canvas>
+  <img src="beetlemorph.png" id="beetlemorph">
+  <img src="player.png" id="player">
+  <img src="player_jets.png" id="player_jets">
+
+  <script src="main.js"></script>
+</body>
+</html>
